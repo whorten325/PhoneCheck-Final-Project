@@ -1,1 +1,7 @@
-
+{
+  "name": "phonecheck",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
