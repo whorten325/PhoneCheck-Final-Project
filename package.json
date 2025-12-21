@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "build": "mkdir -p public && cp -r src/* public"
-  },
+  "dev": "serve public",
+  "build": "mkdir -p public && cp -r src/* public"
+},
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
     "node-fetch": "^3.3.2"
