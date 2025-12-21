@@ -1,5 +1,11 @@
 {
   "name": "phonecheck",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"Build step complete\""
+  },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",
     "node-fetch": "^3.3.2"
