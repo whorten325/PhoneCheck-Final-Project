@@ -7,6 +7,10 @@
 
 ## Running
 `npm run dev`
+If error do thses in order:
+1. npm install --save-dev serve
+2. npx serve public
+3. npm run dev
 
 ## API Endpoints
 - POST /api/validate
