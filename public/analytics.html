@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analytics</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Validation Analytics</h1>
+<canvas id="chart"></canvas>
+
+<script>
+fetch("/api/stats")
+  .then(res => res.json())
+  .then(data => {
+    new Chart(document.getElementById("chart"), {
+      type: "pie",
+      data: {
+        labels: ["Valid", "Invalid"],
+        datasets: [{
+          data: [data.valid, data.invalid]
+        }]
+      }
+    });
+  });
+</script>
+</body>
+</html>
